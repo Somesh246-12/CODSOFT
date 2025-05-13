@@ -49,7 +49,7 @@ def update_contact():
         print("Contact not found.")
         return
     print("Leave field blank to keep current value.")
-    phone = int(input("Enter new phone number:")) or Contact_Book[name]['Phone']
+    phone = input("Enter new phone number:") or Contact_Book[name]['Phone']
     email = input("Enter new Email: ") or Contact_Book[name]['Email']
     address = input("Enter new address: ") or Contact_Book[name]['Address']
 
